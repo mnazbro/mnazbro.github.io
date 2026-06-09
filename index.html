@@ -32,9 +32,46 @@
       color: inherit;
       text-decoration: none;
     }
+
+    /* ── Nav ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+    }
+
+    .nav-logo {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
   </style>
 </head>
 <body>
-  <p style="color: var(--accent); padding: 2rem;">Skeleton OK</p>
+  <nav>
+    <span class="nav-logo">Michael Nazario</span>
+    <ul class="nav-links">
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#code">GitHub</a></li>
+    </ul>
+  </nav>
 </body>
 </html>

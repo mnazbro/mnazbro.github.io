@@ -1,6 +1,40 @@
-<html>
-    <head></head>
-    <body>
-        <h1>mnazbro.com</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Nazario</title>
+  <style>
+    /* ── Design tokens ── */
+    :root {
+      --bg:        #111008;
+      --bg-card:   #161409;
+      --bg-muted:  #1e1c10;
+      --text:      #ffffff;
+      --text-muted:#888888;
+      --text-dim:  #555555;
+      --accent:    #f5a623;
+      --border:    #2a2820;
+    }
+
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <p style="color: var(--accent); padding: 2rem;">Skeleton OK</p>
+</body>
 </html>

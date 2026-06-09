@@ -128,6 +128,57 @@
       margin: 0 2rem;
       opacity: 0.4;
     }
+
+    /* ── Grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--bg-muted);
+      margin-top: 1px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .card-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .card-desc {
+      font-size: 0.8125rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .card-link {
+      font-size: 0.8125rem;
+      color: var(--accent);
+      margin-top: 0.75rem;
+      transition: opacity 0.2s;
+    }
+
+    .card-link:hover {
+      opacity: 0.75;
+    }
+
+    .card-link.muted {
+      color: var(--text-dim);
+      cursor: default;
+    }
   </style>
 </head>
 <body>
@@ -156,5 +207,33 @@
     </div>
   </section>
   <div class="hero-divider"></div>
+
+  <main id="content">
+    <div class="grid">
+
+      <article class="card" id="photos">
+        <div class="card-icon">📷</div>
+        <h2 class="card-title">Film Photography</h2>
+        <p class="card-desc">35mm and 6×6 — analog in a digital world. Street, portrait, landscape.</p>
+        <!-- Michael: replace href with your Google Photos or Instagram gallery URL -->
+        <a class="card-link" href="#" target="_blank" rel="noopener">See gallery →</a>
+      </article>
+
+      <article class="card" id="writing">
+        <div class="card-icon">✍️</div>
+        <h2 class="card-title">Writing</h2>
+        <p class="card-desc">Thoughts on software engineering, craft, and the industry.</p>
+        <span class="card-link muted">Coming soon</span>
+      </article>
+
+      <article class="card" id="code">
+        <div class="card-icon">💻</div>
+        <h2 class="card-title">Code</h2>
+        <p class="card-desc">Mobile apps and open source projects.</p>
+        <span class="card-link muted">Coming soon</span>
+      </article>
+
+    </div>
+  </main>
 </body>
 </html>

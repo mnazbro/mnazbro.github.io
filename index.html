@@ -183,6 +183,27 @@
     .card-link.muted:hover {
       opacity: 1;
     }
+
+    /* ── Footer ── */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      border-top: 1px solid var(--border);
+      margin-top: 1px;
+    }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    .footer-location {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      letter-spacing: 0.1em;
+    }
   </style>
 </head>
 <body>
@@ -239,5 +260,10 @@
 
     </div>
   </main>
+
+  <footer>
+    <span class="footer-copy">© 2026 Michael Nazario</span>
+    <span class="footer-location">NYC</span>
+  </footer>
 </body>
 </html>
